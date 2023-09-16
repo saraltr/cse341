@@ -1,7 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const myController = require("../controllers");
+const myControllers = require("../controllers");
 
-router.get("/", myController.tommyFunction);
+router.get("/", myControllers.tommyFunction);
+router.get("/nina", myControllers.ninaFunction);
+router.get("/rosa", myControllers.rosaFunction);
 
 module.exports = router;
